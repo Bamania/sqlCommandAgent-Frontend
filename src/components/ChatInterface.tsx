@@ -22,7 +22,8 @@ type Message = {
 };
 
 const ChatInterface: React.FC = () => {
-  const Backend_url = "http://localhost:3000";
+  // Use environment variable for API URL with fallback
+  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
   
   // State
   const [messages, setMessages] = useState<Message[]>([]);
@@ -68,14 +69,13 @@ const ChatInterface: React.FC = () => {
     
     setMessages([...messages, newUserMessage]);
     setInputMessage('');
-    setIsLoading(true);
-    
+    setIsLoading(true);    
     try {
       // First API call
-      const aiResponse = await axios.post(`${Backend_url}/api/query`, { userQuery: inputMessage });
+      const aiResponse = await axios.post(`${API_URL}/query`, { userQuery: inputMessage });
       
       // Second API call using the result from the first
-      const finalOutput = await axios.post(`${Backend_url}/api/parser`, { 
+      const finalOutput = await axios.post(`${API_URL}/parser`, { 
         "userQuery": inputMessage,
         "generatedData": aiResponse.data.result
       });
