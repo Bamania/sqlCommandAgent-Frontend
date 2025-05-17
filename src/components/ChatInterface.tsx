@@ -198,7 +198,7 @@ const ChatInterface: React.FC = () => {
                   <Sparkles className="h-12 w-12 text-white" />
                 </div>
               </div>
-              <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white mt-6">Welcome to NexusChat</h2>
+              <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white mt-6">Welcome to Sql agent</h2>
               <p className="text-gray-600 dark:text-gray-300 text-center max-w-md">Start a conversation by typing a message below. I'm here to help with any questions you might have.</p>
               
               <div className="grid grid-cols-2 gap-2 mt-8 w-full max-w-md">
