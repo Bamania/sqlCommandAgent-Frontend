@@ -1,9 +1,6 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite",
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "https://sql-command-agent-server.vercel.app/api/:path*" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "framework": "vite"
+ 
 }
