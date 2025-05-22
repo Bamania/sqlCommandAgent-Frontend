@@ -302,13 +302,13 @@ const ChatInterface: React.FC = () => {
               <Send size={18} className={isLoading ? 'animate-pulse' : ''} />
             </Button>
           </form>
-            <div className="mt-2 text-center text-xs text-gray-500 dark:text-gray-400">
+            <div className="mt-2 text-center text-xs  text-gray-500 dark:text-gray-400">
           
             <a
               href="https://x.com/bamann_irani"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              className="underline hover:text-indigo-600 p-2 dark:hover:text-indigo-400 transition-colors"
             >
             Twitter
             </a>
@@ -317,7 +317,7 @@ const ChatInterface: React.FC = () => {
               href="https://www.linkedin.com/in/aman-yadav-a71105267/"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+              className="underline hover:text-indigo-600 p-2 dark:hover:text-indigo-400 transition-colors"
             >
             linkdin
             </a>
