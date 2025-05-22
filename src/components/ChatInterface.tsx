@@ -201,28 +201,7 @@ const ChatInterface: React.FC = () => {
               <h2 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white mt-6">Welcome to Sql agent</h2>
               <p className="text-gray-600 dark:text-gray-300 text-center max-w-md">Start a conversation by typing a message below. I'm here to help with any questions you might have.</p>
               
-              <div className="grid grid-cols-2 gap-2 mt-8 w-full max-w-md">
-                <Button 
-                  variant="outline" 
-                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-left h-auto flex items-start hover:border-indigo-300 dark:hover:border-indigo-700 transition-all shadow-sm"
-                  onClick={() => setInputMessage("Tell me about yourself")}
-                >
-                  <div>
-                    <div className="font-medium mb-1">Introduce yourself</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">What can you help me with?</div>
-                  </div>
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl p-4 text-left h-auto flex items-start hover:border-indigo-300 dark:hover:border-indigo-700 transition-all shadow-sm"
-                  onClick={() => setInputMessage("What can you do?")}
-                >
-                  <div>
-                    <div className="font-medium mb-1">Capabilities</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">What features do you have?</div>
-                  </div>
-                </Button>
-              </div>
+              
             </div>
           ) : (
             <div className="flex flex-col space-y-6">
