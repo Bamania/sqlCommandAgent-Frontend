@@ -94,7 +94,7 @@ const ChatInterface: React.FC = () => {
       // Add error message
       const errorMessage: Message = {
         id: `error-${Date.now()}`,
-        content: "Sorry, I couldn't process your request. Please try again.",
+        content: "Sorry, I couldn't process your request. I can only answer questions related to the demo database .",
         timestamp: new Date(),
         isUser: false
       };
